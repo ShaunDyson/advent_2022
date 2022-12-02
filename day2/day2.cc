@@ -17,7 +17,6 @@ int main(int argc, char** argv) {
         auto scored = line[2] == 'X' ? 0 : (line[2] == 'Y' ? 3 : 6);
         auto score2 = line[0] == 'A' ? 1 : (line[0] == 'B' ? 2 : 3);
         total += score1;
-        int tmp = total2;
         total2 += scored;
         if (score1 - score2 == 0)
             total += 3;
